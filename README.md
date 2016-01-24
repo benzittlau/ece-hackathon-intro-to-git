@@ -1,5 +1,5 @@
-# Ben's Base Reveal Project
-This is my base project for creating presentations in [reveal.js](https://github.com/hakimel/reveal.js)
+# ECE Hackathon Intro to Git and Github
+Hosted on heroku at [https://ece-hackathon-intro-to-git.herokuapp.com/](https://ece-hackathon-intro-to-git.herokuapp.com/)
 
 ## Instructions
 
@@ -111,14 +111,6 @@ Alternatively you can use the [decktape](https://github.com/astefanutti/decktape
 - **js/** Like above but for JavaScript
 - **plugin/** Components that have been developed as extensions to reveal.js
 - **lib/** All other third party assets (JavaScript, CSS, fonts)
-
-## Hosting
-The project is configured to be hostable on heroku out of the box, simply push to a heroku application.
-
-```sh
-$ heroku apps:create <appname>
-$ git push heroku
-```
 
 ## License
 
