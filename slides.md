@@ -166,28 +166,45 @@ Date:   Sat Jan 23 21:47:33 2016 -0700
 
 ## Setup Github
 What is GitHub?
+
 Create a GitHub Account
+
 Configure Git client for your GitHub Account
 
 
 ## What is GitHub?
-[GitHub](https://github.com) is primarily a tool for managing Git repositories, but also has powerful tools for collaboration, communication, and communication.
-Most open source projects are hosted on GitHub, including those by the [BBC](https://github.com/bbc), [Microsoft](https://github.com/microsoft), [Apple](https://github.com/apple), and many others.
+[GitHub](https://github.com) is primarily a tool for managing Git repositories, but also has powerful tools for collaboration, communication, and community
+
+Most open source projects are hosted on GitHub, including those by the [BBC](https://github.com/bbc), [Microsoft](https://github.com/microsoft), [Apple](https://github.com/apple), and many others
+
 GitHub will allow you to share repositories with your team members, and facilitate the process of working together
 
 
 ## Create a GitHub Account
 Go to [GitHub's SignUp Form](https://github.com/join)
+
 Fill in a username, e-mail, and password (pick your username carefully!)
+
 Choose the free plan when asked to choose a plan
 
 
-## Configure Git client
+## Configure Git Client
 Go to GitHub Desktop => Preferences => Accounts
 
 Enter your Login and Password from the account you created
 
 ![Add github account](img/add_github_account.jpg)
+
+
+## Configure Git Client (Linux CLI)
+You'll be prompted for your username/password when you interact with GitHub, but you'll want to enable caching so you aren't prompted for each operation
+
+``` sh
+$ git config --global credential.helper cache
+$ git config --global credential.helper 'cache --timeout=3600'
+```
+
+A better long term solution that requires more setup is to enable [SSH Keys](https://help.github.com/articles/generating-a-new-ssh-key/)
 
 
 
