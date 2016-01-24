@@ -19,7 +19,7 @@ First steps in Git
 
 Setting up a GitHub account
 
-Creating a GitHub project
+Creating a GitHub Repository
 
 Using Git Branches and GitHub
 
@@ -206,6 +206,62 @@ $ git config --global credential.helper 'cache --timeout=3600'
 
 A better long term solution that requires more setup is to enable [SSH Keys](https://help.github.com/articles/generating-a-new-ssh-key/)
 
+
+
+## Creating a GitHub Repository
+Publishing your local repo using the GitHub Tool
+Create a new GitHub Repo directly through GitHub (CLI)
+Visit your Repo online
+Invite a collaborator to your repository
+
+
+## Publish your local repo using the GitHub Tool
+Click the "Public" button in the top right-hand corner of the tool
+
+Fill out a description for your repo
+
+Click "Publish Repository"
+
+![Publish to github](img/publish_to_github.jpg)
+
+
+## New GitHub Repo (CLI)
+Go to your [GitHub dashboard](https://github.com)
+
+Click on "+ New Repository" (You may need to validate your e-mail)
+
+Fill in a "my-new-repo" for name, and a description.
+
+![Create a github repo](img/create_github_repo.jpg)
+
+Link your local repo to the remote repository, and push up your commit
+
+```sh
+$ git remote add origin https://github.com/<your username>/my-new-repo.git
+$ git push -u origin master
+```
+
+
+## Visit your Repo Online
+You can now see your repo online, shared with the world
+
+Go to https://github.com/[your username]/my-new-repo
+
+![Published repo](img/published_repo.jpg)
+
+As this is a public repo this is available to everyone in the world
+
+If you upgrade your GitHub plan to a paid subscription you can add Private repos which are not shared publically
+
+
+## Invite a collaborator to your repository
+Turn to the person beside you and ask them for their GitHub username
+
+From your Repo page to go Settings => Collaborators.  Enter their GitHub username in the search box, and click "Add Collaborator"
+
+![Add collaborator](img/add_collaborator.jpg)
+
+This GitHub user now has access to modify code in your repository.  Make sure you only add people you trust as collaborators to your repositories.
 
 
 
