@@ -265,6 +265,98 @@ This GitHub user now has access to modify code in your repository.  Make sure yo
 
 
 
+## Using Git Branches and GitHub Pull Requests
+Where the real power of Git Shines
+
+
+## What are Git branches?
+A "branch" allows you to fork away from "master" and manage work in progress, try fixing a bug, write a new feature, etc. without polluting a "good" state of your project in master
+
+![Basic Branch](img/basic-branching.png)
+
+
+## Creating a branch
+We're going to add a basic python web server to our project, so let's create a branch called "server".  Your branch names should be descriptive of their purpose.
+
+Click on the "New Branch" button shaped like a two-pronged fork.
+
+Populate the name field with "server"
+
+Click "Create Branch"
+
+![New Branch](img/new-branch.jpg)
+
+### Using the CLI
+```sh
+$ git checkout -b server
+```
+
+
+## Add a new file to our branch
+Using a text editor create a new file `server.py` and add the following:
+
+```python
+import cherrypy
+	  
+class HelloWorld(object):
+    def index(self):
+        return "Hello World!"
+    index.exposed = True
+
+cherrypy.quickstart(HelloWorld())
+```
+
+
+## Commit the file as before
+Note that we are now committing to our `server` branch, not master
+
+![Server Commit](img/server-commit.jpg)
+
+```sh
+$ git add .
+$ git commit -am "Add a readme file to the project"
+```
+
+
+## "Push" our branch to GitHub
+We're now going to "push" so our branch is available on GitHub
+
+Click the "Publish" button (the screenshot shows sync, yours will show publish)
+
+![Server Commit](img/publish.jpg)
+
+### Using CLI
+
+```sh
+$ git push origin server
+```
+
+
+## Create a new Pull Request
+Go to your repo on github:
+
+`https://github.com/[your username]/my-new-repo`
+
+Click on "New pull request"
+
+![New pull request](img/new-pull-request.jpg)
+
+
+## Create a new Pull Request
+Select the `server` branch
+
+Click "Create pull request"
+
+![Create PR](img/create-pr.jpg)
+
+
+## Merge Pull Request into Master
+Once your team members have looked at your code and you are ready, you can now "merge" it into `master` so it can become part of the main stream of the project.
+
+![Merge](img/merge-pr.jpg)
+
+
+
 # Resources
 * [This presentations GitHub project](https://github.com/benzittlau/ece-hackathon-intro-to-git)
 * [Set up Git (GitHub)](https://help.github.com/articles/set-up-git/)
