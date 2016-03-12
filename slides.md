@@ -48,7 +48,7 @@ I *strongly* recommend learning the command-line tool, but for today we'll start
 
 [GitHub GUI For OS X](https://mac.github.com/)
 
-[GitHub GUI For Windows](https://mac.github.com/)
+[GitHub GUI For Windows](https://windows.github.com/)
 
 
 ## INSTALLING GIT ON Linux
@@ -354,6 +354,97 @@ Click "Create pull request"
 Once your team members have looked at your code and you are ready, you can now "merge" it into `master` so it can become part of the main stream of the project.
 
 ![Merge](img/merge-pr.jpg)
+
+
+
+# Exercise
+## Create a Ping Pong "Game"
+###Bonus Points: Use only the command line
+
+
+## Step 1 - Pick a Partner
+Pick someone to work with, whoever's handy.
+
+Choose one of you to be "Ping", the other is "Pong"
+
+
+## Step 2 - Create your GitHub Repo
+Setup a GitHub Repo for a new project called "ping_pong"
+
+Initialize it with a simple `readme.md` file
+
+Checkout that Repo on both partners computers
+
+
+## Step 3 - Create your python game file
+Add a python file `ping_pong_game.py`  with the below to your master branch:
+
+```python
+#!/usr/bin/python
+import time
+
+######################
+# Write Ping After Here
+######################
+
+######################
+# Write Pong After Here
+######################
+
+Ping.bounce()
+```
+
+
+## Step 4 - Create your own branches
+Get the updated version of master on both computers and create your branches:
+
+If you're ping, create a branch "add_ping"
+
+If you're pong, create a branch "add_pong"
+
+
+## Step 5 - Adding the appropriate Code
+On your branches, add your part of the code to the file
+
+If you're ping, add this after the "ping" comment section
+
+```python
+class Ping:
+    @staticmethod
+    def bounce():
+        print "Ping"
+        time.sleep(1)
+        Pong.bounce()
+```
+If you're pong, create a branch "add_pong"
+```
+class Pong:
+    @staticmethod
+    def bounce():
+        print "Pong"
+        time.sleep(1)
+        Ping.bounce()
+```
+
+
+## Step 6 - Create Pull Requests for your branches
+Create a PR for your branch
+
+Have your partner merge your pull request into your `master` branch
+
+
+## Step 7 - Get the updated master branch and run it
+Update your master branch from GitHub
+
+Run your game:
+
+```bash
+python ping_pong_game.py
+```
+
+
+## Step 8 - Profit
+![Gnomes](img/gnomes.jpeg)
 
 
 
