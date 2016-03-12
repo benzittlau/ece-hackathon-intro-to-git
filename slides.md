@@ -449,7 +449,7 @@ python ping_pong_game.py
 
 
 # Resources
-* [This presentations GitHub project](https://github.com/benzittlau/ece-hackathon-intro-to-git)
+* [This presentations GitHub project](https://github.com/benzittlau/student-dev-intro-to-git)
 * [Set up Git (GitHub)](https://help.github.com/articles/set-up-git/)
 * [How to write a Git commit message](http://chris.beams.io/posts/git-commit/)
 * [Git From The Inside Out](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
