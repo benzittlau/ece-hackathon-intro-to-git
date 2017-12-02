@@ -1,4 +1,4 @@
-## http://student-dev-intro-to-git.herokuapp.com/#/
+## https://ece-hackathon-intro-to-git.herokuapp.com/#/
 ## INTRODUCTION TO GIT AND GITHUB
 #### http://getjobber.com
 #### @benzittlau
@@ -277,7 +277,7 @@ A "branch" allows you to fork away from "master" and manage work in progress, tr
 ## Creating a branch
 We're going to add a basic python web server to our project, so let's create a branch called "server".  Your branch names should be descriptive of their purpose.
 
-Click on the "Current Branch", and then the "New" button.
+Click on "Current Branch", and then the "New" button.
 
 Populate the name field with "server"
 
@@ -320,7 +320,7 @@ $ git commit -am "Add a readme file to the project"
 ## "Push" our branch to GitHub
 We're now going to "push" so our branch is available on GitHub
 
-Click the "Publish" button (the screenshot shows sync, yours will show publish)
+Click "Publish" (the screenshot shows sync, yours will show publish)
 
 ![Server Commit](img/publish.jpg)
 
