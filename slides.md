@@ -1,3 +1,4 @@
+## http://student-dev-intro-to-git.herokuapp.com/#/
 ## INTRODUCTION TO GIT AND GITHUB
 #### http://getjobber.com
 #### @benzittlau
@@ -61,9 +62,7 @@ $ sudo apt-get install git
 
 
 ## CONFIGURING GIT(GUI)
-Skip Setup when Prompted
-
-Go to GitHub Desktop => Preferences => Advanced
+Skip GitHub Sign-in when Prompted
 
 Enter your name and e-mail
 
@@ -100,7 +99,7 @@ $ git init
 
 
 ## Create a Readme file
-Using your editor of choice create a file at `~/GitHub/my-new-repo/readme.md`
+Using your editor of choice create a file at `~/Documents/GitHub/my-new-repo/readme.md`
 
 `.md` extension is for [MarkDown](https://daringfireball.net/projects/markdown/), a common markup language
 
@@ -148,7 +147,7 @@ A lot can be said about [writing good commit messages](http://chris.beams.io/pos
 
 
 ## View our commit
-We can now see our committed change
+We can now see our committed change under "History"
 
 ![View our commit](img/view_commit.jpg)
 
@@ -189,7 +188,7 @@ Choose the free plan when asked to choose a plan
 
 
 ## Configure Git Client
-Go to GitHub Desktop => Preferences => Accounts
+Go to GitHub Desktop => Preferences => Accounts => Click "Sign In" for GitHub.com
 
 Enter your Login and Password from the account you created
 
@@ -278,7 +277,7 @@ A "branch" allows you to fork away from "master" and manage work in progress, tr
 ## Creating a branch
 We're going to add a basic python web server to our project, so let's create a branch called "server".  Your branch names should be descriptive of their purpose.
 
-Click on the "New Branch" button shaped like a two-pronged fork.
+Click on the "Current Branch", and then the "New" button.
 
 Populate the name field with "server"
 
@@ -297,7 +296,7 @@ Using a text editor create a new file `server.py` and add the following:
 
 ```python
 import cherrypy
-	  
+
 class HelloWorld(object):
     def index(self):
         return "Hello World!"
@@ -453,4 +452,3 @@ python ping_pong_game.py
 * [Set up Git (GitHub)](https://help.github.com/articles/set-up-git/)
 * [How to write a Git commit message](http://chris.beams.io/posts/git-commit/)
 * [Git From The Inside Out](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
-
